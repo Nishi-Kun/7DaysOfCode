@@ -1,8 +1,8 @@
 // third day on challenge - criar um fluxo de rpg e gerir escolhas do usuário:
 
 saudarUsuario();
-definirCarreira(trilharCarreira());
-listarInteresses();
+trilharCarreira();
+
 
 function saudarUsuario(){
     alert('Bem vindo(a)!');
@@ -39,23 +39,4 @@ function definirCarreira(){
     if(carreira =='1'){
         alert(`Ótima escolha. Com ${framework} `)
     }
-}
-
-function listarInteresses(){
-    let tecnologia;
-    let paragrafoLista = document.createElement('p');
-    listaTecnologias=[];
-    alert('Você possui interesse em outras tecnologias?');
-
-    while(tecnologia !== null){
-        tecnologia = prompt('Qual?');
-        if(tecnologia !== null){
-            alert(`${tecnologia} é realmente uma ótima opção.`);
-            listaTecnologias.push(tecnologia);
-        }
-    }
-    
-    paragrafoLista.innerHTML = listaTecnologias;
-    document.body.appendChild(paragrafoLista);
-
 }
