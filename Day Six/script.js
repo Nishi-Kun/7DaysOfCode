@@ -57,6 +57,8 @@ if(adicao.toLowerCase() == 'sim'){
     
         }   
 
+        alert(`Frutas: ${frutas.join(", ")}\n` + `laticínios: ${laticinios.join(", ")}\n`+ `Doces: ${doces.join(", ")}\n`+`Congelados: ${congelados.join(", ")}`)
+
         excluir = prompt('Deseja excluir algum item da lista? Sim ou Não:');
 
         if(excluir.toLowerCase() == 'sim'){
